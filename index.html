@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作品集原型</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #fff;
+      color: #000;
+    }
+
+    .top-nav {
+      background: #fff;
+      color: #000;
+    }
+
+    .sidebar,
+    .content,
+    .container,
+    .page-section,
+    .section-text,
+    .contact,
+    .nav-content,
+    .section-flex,
+    .image-container,
+    .image-placeholder {
+      background: transparent;
+      color: #000;
+    }
+
+    a,
+    a:visited,
+    a:active {
+      color: #000;
+    }
+
+    a:hover {
+      color: #333;
+    }
+
+    hr {
+      border-color: #333;
+    }
+
+    .content h2 {
+      color: #000;
+    }
+
+    .sidebar nav ul li {
+      position: relative;
+    }
+    .sidebar-link-disabled {
+      color: #000;
+      text-decoration: underline;
+      font-size: 15px;
+      cursor: not-allowed;
+      display: inline-block;
+    }
+    .sidebar-link-disabled[data-tooltip] {
+      position: relative;
+    }
+    .sidebar-link-disabled:hover::after {
+      content: attr(data-tooltip);
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      margin-top: 6px;
+      padding: 6px 10px;
+      background: #333;
+      color: #fff;
+      font-size: 12px;
+      white-space: nowrap;
+      border-radius: 4px;
+      z-index: 9999;
+      pointer-events: none;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="top-nav">
+    <div class="nav-content">
+      <ul>
+        <li><a href="#projects" class="active">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Xinyue Jiang</h2>
+      <nav>
+        <ul>
+          <li><a href="#page1">AI/ML</a></li>
+          <li><span class="sidebar-link-disabled" data-tooltip="Coming soon" title="Coming soon">Interaction Design</span></li>
+          
+        </ul>
+      </nav>
+      <div class="contact">
+        <a href="mailto:jiang_xinyue233@qq.com">Email</a><br>
+        <a href="https://www.xiaohongshu.com/user/profile/61362e55000000000201d8d6" target="_blank">rednote</a>
+      </div>
+    </aside>
+    <main class="content">
+
+      <section id="page1" class="page-section">
+        <div class="section-flex">
+          <div class="section-text">
+            <h3>Tailtell</h3>
+            <p><strong>A dog behaviour translation APP</strong>
+              <br><br>In this case, I trained a dog behaviour translator using machine learning, which I nicknamed DLP
+              (Dog Language
+              Processing). By doing so, I hope to offer a new possibility of human-dog interaction.
+            </p>
+            <hr>
+            <p>Project type: personal project<br>CV Architecture: CNN<br>ML Framework: PyTorch<br>LMM: Qwen-Turbo
+            </p>
+          </div>
+          <div class="image-container">
+            <a href="Tailtell.html">
+              <img src="tailtell/img-1.png" alt="onAir project preview">
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="page1" class="page-section">
+        <div class="section-flex">
+          <div class="section-text">
+            <h3>Shanghai OCJ Shopping
+              Multi-Agent System Development</h3>
+            <p><strong>A network of live-streamming, customer service and seraching AI agents</strong><br>
+              <br> In this project, I integrated AI touchpoints into the livestream e-commerce ecosystem to craft a more intelligent and responsive shopping experience.
+            </p>
+            <hr>
+            <p>Project type: internship project <br>Role: product manager intern
+              <br>Tools: Coze
+            </p>
+          </div>
+          <div class="image-container">
+            <a href="shopping agent.html">
+              <img src="shopping agent/img_1.png" alt="onAir project preview">
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="page1" class="page-section">
+        <div class="section-flex">
+          <div class="section-text">
+            <h3>Shanghe Architectural Design Platform</h3>
+            <p><strong>An AI-powered architectural drawing generator</strong><br>
+              <br> In this project, I offered 'know-hows' from an architectural student's point of view, constructing a
+              platform that caters to real painpoints.
+            </p>
+            <hr>
+            <p>Project type: internship project <br>Role: product manager intern<br>Base model: Stable Diffusion
+              
+            </p>
+          </div>
+          <div class="image-container">
+            <a href="shanghe.html">
+              <img src="shanghe/img14.png" alt="onAir project preview">
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="page1" class="page-section">
+        <div class="section-flex">
+          <div class="section-text">
+            <h3>onAir</h3>
+            <p><strong>An AI-powered wearable device that reshapes the relationship between humans and airbone
+                particles</strong>
+              <br><br>In this case, I used CNN to identify pollen grains, which alarms users with allerges to take
+              precautions. By gentle nudging people with inflated airbags, the device seeks to retian the interaction
+              between humans
+              and the invisible world in the air.
+            </p>
+            <hr>
+            <p>Project type: personal project<br>CV Architecture: CNN<br>Tools: Arduino,
+              PyTorch,Blender
+            </p>
+          </div>
+          <div class="image-container">
+            <a href="onAir.html">
+              <img src="onair/img14.png" alt="onAir project preview">
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+  </div>
+</body>
+
+</html>

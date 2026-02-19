@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>项目详情 - Tailtell狗狗行为识别APP</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="project-detail.css">
+</head>
+
+<body>
+  <nav class="top-nav">
+    <div class="nav-content">
+      <ul>
+        <li><a href="portfolio_website.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="project-detail">
+    <div class="hero-section">
+      <div class="hero-text">
+        <h1 class="project-title">Tailtell</h1>
+        <h2 class="project-subtitle">A dog behaviour translation APP powered by AI</h2>
+      </div>
+      <div class="hero-image">
+        <img src="tailtell/img-1.png" alt="Project hero image">
+      </div>
+    </div>
+
+    <div class="project-content">
+      <div class="content-wrapper">
+        <div class="project-info-grid">
+          <div class="info-group">
+            <div class="info-label">PROJECT TYPE</div>
+            <div class="info-content">Personal project <br> Individual Project</div>
+          </div>
+          <div class="info-group">
+            <div class="info-label">Duration</div>
+            <div class="info-content">1 Week</div>
+          </div>
+          <div class="info-group">
+            <div class="info-label">PROJECT ARCHITECTURE</div>
+            <div class="info-content">CV architecture: CNN <br>ML Framework: PyTorch <br> LMM: Qwen-Turbo</div>
+          </div>
+          <div class="info-group">
+            <div class="info-label">Role</div>
+            <div class="info-content">Full stack developer </div>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h3>OVERVIEW</h3>
+          <h2>About project</h2>
+          <div class="content-image-grid">
+            <div class="grid-image">
+              <h3 style="text-align: left;">Problem Statement</h3>
+              <p>Dog owners interact with their dogs every day, but much of that interaction relies on interpretation rather than understanding. Dogs express emotions through subtle facial cues, yet these signals are often ambiguous to humans. This creates a persistent communication gap between how dogs express internal states and how humans interpret them.</p>
+            </div>
+            <div class="grid-image">
+              <h3 style="text-align: left;">Solution Statement</h3>
+              <p>TailTell explores a new form of dog–human interaction by using AI to translate canine facial expressions into emotionally readable messages.
+                The system analyzes a dog’s facial expression from an image, identifies the underlying emotional state using a vision-based model, and then interprets that signal through a language model to produce a short, expressive message.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h3>GOAL</h3>
+          <h2>Achieving DLP</h2>
+          <div class="content-image full-width">
+            <img src="tailtell/img-2.png" alt="Project illustration">
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h3>TECH STACK</h3>
+          <h2>CV Model Training</h2>
+          <p>The emotion recognition model is built with a CNN-based computer vision approach.
+            I chose CNNs because they’re lightweight, fast, and well-suited for visual pattern recognition —
+            especially for facial expressions, where spatial features matter more than long-range context.</p>
+          <div class="content-image">
+            <video src="tailtell/video1.mp4" controls style="width: 100%; height: auto; display: block;"></video>
+          </div>
+          <p>You can interact with the model on <a href="https://huggingface.co/spaces/Catherine233/Dog_Emotion" target="_blank">Hugging Face</a>.</p>
+        </div>
+
+        <div class="content-section">
+          <h3>DEMO</h3>
+          <h2>The Translation Process</h2>
+          <p>The project is accessible on <a href="https://github.com/Catherine-233/TailTell" target="_blank">Github</a>.</p>
+          <div class="content-image">
+            <video src="tailtell/video2.mp4" controls style="width: 100%; height: auto; display: block;"></video>
+          </div>
+        </div>
+        
+        <div class="content-section">
+          <h3>BUSINESS MODEL</h3>
+          <h2>An Entry Point to Pet Care Ecosystem</h2>
+          <p>Based on these emotional records, Tailtell provides feeding and care recommendations. These recommendations naturally connect users to pet services like grooming, health checks, and daily care. So Tailtell is not just a fun AI demo — it’s designed as an emotional entry point into the pet care ecosystem.</p>
+          <div class="content-image">
+            <img src="tailtell/img-3.jpg" alt="Project illustration">
+          </div>
+      </div>
+
+      <div class="content-section">
+        <h3>DESIGN</h3>
+        <h2>User Interface Design</h2>
+        <div class="content-image full-width">
+          <img src="tailtell/img-4.png" alt="Project illustration">
+        </div>
+      </div>
+
+
+  </main>
+  <script>
+    const images = [
+      "shopping agent/img_8.png",
+      "shopping agent/img_9.png"
+    ];
+    let current = 0;
+    const imgEl = document.getElementById('toggle-image');
+    setInterval(() => {
+      current = (current + 1) % images.length;
+      imgEl.src = images[current];
+    }, 4000);
+  </script>
+</body>
+
+</html>

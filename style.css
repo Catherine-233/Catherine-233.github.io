@@ -1,0 +1,290 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  padding-top: 52px;
+  /* 顶部导航的高度 */
+}
+
+.sidebar {
+  width: 260px;
+  background: transparent;
+  border-right: 1px solid #e0e0e0;
+  padding: 24px 16px;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 52px;
+  /* 顶部导航的高度 */
+  height: calc(100vh - 52px);
+  overflow-y: auto;
+  color: #000;
+}
+
+.content {
+  margin-left: 260px;
+  padding: 32px 40px 32px 40px;
+  flex: 1;
+  overflow-y: auto;
+  min-height: 100vh;
+  background: transparent;
+  color: #000;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #000;
+}
+
+.sidebar p {
+  font-size: 13px;
+  color: #000;
+  margin-bottom: 18px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px 0;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 6px;
+}
+
+.sidebar nav ul li a {
+  color: #000;
+  text-decoration: underline;
+  font-size: 15px;
+}
+
+.sidebar .contact a {
+  color: #000;
+  text-decoration: underline;
+  font-size: 15px;
+}
+
+.page-section {
+  margin-bottom: 60px;
+  color: #000;
+}
+
+.page-section h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.page-section p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+hr {
+  border: none;
+  border-top: 1.5px solid #333;
+  margin: 10px 0 10px 0;
+  width: 60%;
+}
+
+.section-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.section-text {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.image-container {
+  flex: 2 1 0;
+  width: 0;
+  min-width: 180px;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  position: relative;
+  background: transparent;
+}
+
+.image-container a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.2);
+}
+
+@supports not (aspect-ratio: 16 / 9) {
+  .image-container {
+    height: 0;
+    padding-top: 56.25%;
+    /* 16:9 高宽比 */
+  }
+
+  .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+}
+
+.image-placeholder {
+  flex: 2 1 0;
+  width: 0;
+  min-width: 180px;
+  aspect-ratio: 16 / 9;
+  background: #eee;
+  border: 1px solid #ddd;
+  margin: 0;
+  position: relative;
+}
+
+@supports not (aspect-ratio: 16 / 9) {
+  .image-placeholder {
+    height: 0;
+    padding-top: 56.25%;
+    /* 16:9 高宽比 */
+  }
+}
+
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  z-index: 1000;
+  color: #000;
+}
+
+.top-nav a,
+.top-nav a:visited,
+.top-nav a:active {
+  color: #000;
+}
+
+.top-nav a:hover {
+  color: #333;
+}
+
+.nav-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: flex-end;
+  color: #000;
+}
+
+.top-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 32px;
+}
+
+.top-nav li {
+  padding: 16px 0;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    padding-top: 44px;
+  }
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+    top: 44px;
+    color: #000;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 16px;
+  }
+
+  .nav-content {
+    padding: 0 16px;
+  }
+
+  .top-nav li {
+    padding: 12px 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section-flex {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .image-container {
+    width: 100%;
+    height: 180px;
+  }
+
+  .image-placeholder {
+    width: 100%;
+    height: 180px;
+  }
+}
+
+.content-section h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.content-section p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #000;
+  width: 80%;
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 800px) {
+
+  .content-section h3,
+  .content-section p {
+    width: 100%;
+  }
+}
