@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>项目详情 - Xinguang</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="project-detail.css">
+</head>
+
+<body>
+  <nav class="top-nav">
+    <div class="nav-content">
+      <ul>
+        <li><a href="index.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="project-detail">
+    <div class="hero-section">
+      <div class="hero-text">
+        <h1 class="project-title">Xinguang</h1>
+        <h2 class="project-subtitle">An AI manifestation WeChat mini-APP </h2>
+      </div>
+      <div class="hero-image">
+        <img src="manifestation/image2.png" alt="Project hero image">
+      </div>
+    </div>
+
+    <div class="project-content">
+      <div class="content-wrapper">
+        <div class="project-info-grid">
+          <div class="info-group">
+            <div class="info-label">PROJECT TYPE</div>
+            <div class="info-content">Personal project</div>
+          </div>
+          <div class="info-group">
+            <div class="info-label">Duration</div>
+            <div class="info-content">2 weeks</div>
+          </div>
+          <div class="info-group">
+            <div class="info-label">Role</div>
+            <div class="info-content">Full stack Developer</div>
+          </div>
+          <div class="info-group">
+            <div class="info-label">Tools</div>
+            <div class="info-content">Weixin Open Platform, Tencent Cloud TTS, Qwen</div>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h3>OVERVIEW</h3>
+          <h2>Video</h2>
+              <div class="content-image">
+                <video src="manifestation/video.mp4" controls style="width: 100%; height: auto; display: block;"></video>
+              </div>
+        </div>
+
+  </main>
+  <script>
+    const images = [
+      "shopping agent/img_8.png",
+      "shopping agent/img_9.png"
+    ];
+    let current = 0;
+    const imgEl = document.getElementById('toggle-image');
+    setInterval(() => {
+      current = (current + 1) % images.length;
+      imgEl.src = images[current];
+    }, 4000);
+  </script>
+</body>
+
+</html>
