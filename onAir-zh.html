@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>项目详情 - onAir</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="project-detail.css">
+</head>
+
+<body>
+  <nav class="top-nav">
+    <div class="nav-content">
+      <ul>
+        <li><a href="index-zh.html">项目</a></li>
+        <li><a href="about-zh.html">关于</a></li>
+        <li><a href="onAir.html">EN</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="project-detail">
+    <div class="hero-section">
+      <div class="hero-text">
+        <h1 class="project-title">onAir</h1>
+        <h2 class="project-subtitle">重塑人与空气中颗粒物关系的 AI 可穿戴设备</h2>
+      </div>
+      <div class="hero-image">
+        <img src="onair/img14.png" alt="项目主图">
+      </div>
+    </div>
+
+    <div class="project-content">
+      <div class="content-wrapper">
+        <div class="project-info-grid">
+          <div class="info-group">
+            <div class="info-label">项目类型</div>
+            <div class="info-content">个人项目<br>工业设计项目</div>
+          </div>
+          <div class="info-group">
+            <div class="info-label">周期</div>
+            <div class="info-content">2 个月</div>
+          </div>
+          <div class="info-group">
+            <div class="info-label">ML 细节</div>
+            <div class="info-content">架构：CNN<br>框架：PyTorch<br>IDE：Jupyter Notebook</div>
+          </div>
+          <div class="info-group">
+            <div class="info-label">工具</div>
+            <div class="info-content">Arduino, Figma, Adobe Creative Suite, Rhino, Blender, Keyshot</div>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h3 style="color: #9CB492;">项目背景</h3>
+          <h2>过敏是人类与身边不可见世界的互动</h2>
+          <p>越来越多研究表明，全球变暖使花粉过敏加剧。若将过敏视为免疫系统在排除空气中的颗粒，那么人类活动导致的过敏加重，可视为自然对人类的不耐受表达。</p>
+          <div class="content-image">
+            <img src="onair/img1.png" alt="项目示意图">
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h3 style="color: #9CB492;">概念</h3>
+          <h2>我们如何重塑这种互动？</h2>
+          <p>项目目标是将过敏——这种人与自然的负面互动——转化为新的方式：既提升对空气中颗粒的认知，也提醒过敏人群做好防护。</p>
+          <div class="content-image full-width">
+            <img src="onair/img2.png" alt="项目示意图">
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h3 style="color: #9CB492;">形态探索</h3>
+          <h2>从过敏反应中寻找形态</h2>
+          <p>形态探索的灵感来自过敏反应。</p>
+          <div class="content-image-grid">
+            <div class="grid-image">
+              <img src="onair/img3.png" alt="项目示意图">
+              <p>身体不同部位对过敏原有不同反应，可将警示信号应用于这些部位以模拟相应感觉。</p>
+            </div>
+            <div class="grid-image">
+              <img src="onair/img4.png" alt="项目示意图">
+              <p>颗粒形态可被提取并融入设备设计。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h3 style="color: #9CB492;">实验</h3>
+          <h2>不同形状的气囊在人体不同部位能唤起何种感觉？</h2>
+          <p>我制作了从自然颗粒中提取形态的样本并充气，将样本置于身体不同部位，请参与者描述感受。</p>
+          <div class="content-image">
+            <img src="onair/img5.png" alt="项目示意图">
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h3 style="color: #9CB492;">迭代</h3>
+          <div class="content-image">
+            <img src="onair/img6.png" alt="项目示意图">
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h3 style="color: #9CB492;">模型训练</h3>
+          <h2>基于 CNN 的花粉识别与分类</h2>
+          <p>通过 Kaggle 获取高质量花粉数据集，经清洗与标注后，使用 PyTorch 搭建 CNN。训练 4 个 epoch 后得到理想结果。</p>
+          <div class="content-pdf">
+            <iframe src="onair/pollen-classifier.pdf" type="application/pdf" width="100%" height="600px"></iframe>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h3 style="color: #9CB492;">机械结构</h3>
+          <p>效果通过以下机械系统实现。因技术限制，原型阶段采用现成颗粒传感器。</p>
+          <div class="content-image full-width">
+            <img src="onair/img7.jpg" alt="项目示意图">
+          </div>
+          <p>三件设备可根据用户需求独立使用，通过可拆卸中央控制盒实现：连接软管即可控制各设备充放气。</p>
+          <div class="content-image">
+            <img src="onair/img8.png" alt="项目示意图">
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h3 style="color: #9CB492;">过程</h3>
+          <h2>设备实体原型</h2>
+          <p>制作从自然颗粒提取形态的样本并充气，置于身体不同部位，请参与者描述感受。</p>
+          <div class="content-image-grid">
+            <div class="grid-image">
+              <img src="onair/img9.png" alt="项目示意图">
+            </div>
+            <div class="grid-image">
+              <img src="onair/img10.png" alt="项目示意图">
+            </div>
+          </div>
+          <br>
+          <div class="content-image">
+            <img src="onair/img11.png" alt="项目示意图">
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h3 style="color: #9CB492;">故事板</h3>
+          <h2>onAir 帮助过敏人群采取预防措施</h2>
+          <div class="content-image">
+            <img src="onair/img15.png" alt="项目示意图">
+          </div>
+          <h2>onAir 帮助人们与微观世界互动</h2>
+          <div class="content-image">
+            <img src="onair/img16.png" alt="项目示意图">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

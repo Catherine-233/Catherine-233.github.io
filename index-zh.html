@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作品集 - 蒋昕玥</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { background: #fff; color: #000; }
+    .top-nav { background: #fff; color: #000; }
+    .sidebar, .content, .container, .page-section, .section-text, .contact, .nav-content, .section-flex, .image-container, .image-placeholder { background: transparent; color: #000; }
+    a, a:visited, a:active { color: #000; }
+    a:hover { color: #333; }
+    hr { border-color: #333; }
+    .content h2 { color: #000; }
+    .sidebar nav ul li { position: relative; }
+    .sidebar-filter.active { font-weight: 600; }
+    .sidebar-link-disabled { color: #000; text-decoration: underline; font-size: 15px; cursor: not-allowed; display: inline-block; }
+    .sidebar-link-disabled[data-tooltip] { position: relative; }
+    .sidebar-link-disabled:hover::after { content: attr(data-tooltip); display: block; position: absolute; left: 0; top: 100%; margin-top: 6px; padding: 6px 10px; background: #333; color: #fff; font-size: 12px; white-space: nowrap; border-radius: 4px; z-index: 9999; pointer-events: none; }
+  </style>
+</head>
+
+<body>
+  <nav class="top-nav">
+    <div class="nav-content">
+      <ul>
+        <li><a href="#projects" class="active">项目</a></li>
+        <li><a href="about-zh.html">关于</a></li>
+        <li><a href="index.html">EN</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>蒋昕玥</h2>
+      <nav>
+        <ul>
+          <li><a href="#" class="sidebar-filter active" data-filter="all">全部项目</a></li>
+          <li><a href="#" class="sidebar-filter" data-filter="personal">个人APP开发</a></li>
+          <li><a href="#" class="sidebar-filter" data-filter="internship">实习项目</a></li>
+          <li><a href="#" class="sidebar-filter" data-filter="hci">人机交互项目</a></li>
+        </ul>
+      </nav>
+      <div class="contact">
+        <a href="mailto:jiang_xinyue233@qq.com">邮箱</a><br>
+        <a href="https://www.xiaohongshu.com/user/profile/61362e55000000000201d8d6" target="_blank">小红书</a>
+      </div>
+    </aside>
+
+    <main class="content">
+      <section class="page-section project-item" data-project="manifestation">
+        <div class="section-flex">
+          <div class="section-text">
+            <h3>心光</h3>
+            <p><strong>AI 显化微信小程序</strong><br><br>
+              结合 AI 的目标设定、愿景板、冥想、肯定语与情绪转化，打造更智能、更贴心的个人成长体验。
+            </p>
+            <hr>
+            <p>项目类型：个人项目<br>工具：微信开放平台、腾讯云 TTS、通义千问</p>
+          </div>
+          <div class="image-container">
+            <a href="manifestation-zh.html">
+              <img src="manifestation/image1.png" alt="心光项目预览">
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section project-item" data-project="tailtell">
+        <div class="section-flex">
+          <div class="section-text">
+            <h3>Tailtell</h3>
+            <p><strong>狗狗行为翻译 APP</strong><br><br>
+              本项目使用机器学习训练了一套多模态狗狗行为翻译器，我将其命名为 DLP（Dog Language Processing），希望为人与狗狗的互动提供新的可能。
+            </p>
+            <hr>
+            <p>项目类型：个人项目<br>视觉架构：CNN<br>ML 框架：PyTorch<br>大模型：Qwen-Turbo</p>
+          </div>
+          <div class="image-container">
+            <a href="Tailtell-zh.html">
+              <img src="tailtell/img-1.png" alt="Tailtell 项目预览">
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section project-item" data-project="shopping">
+        <div class="section-flex">
+          <div class="section-text">
+            <h3>上海 OCJ 购物多智能体系统开发</h3>
+            <p><strong>直播、客服与搜索 AI 智能体网络</strong><br><br>
+              在本项目中，我将 AI 触点融入直播电商生态，打造更智能、更响应的购物体验。
+            </p>
+            <hr>
+            <p>项目类型：实习项目<br>角色：产品经理实习生<br>工具：Coze</p>
+          </div>
+          <div class="image-container">
+            <a href="shopping agent-zh.html">
+              <img src="shopping agent/img_1.png" alt="购物 Agent 项目预览">
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section project-item" data-project="shanghe">
+        <div class="section-flex">
+          <div class="section-text">
+            <h3>上河建筑设计平台</h3>
+            <p><strong>AI 建筑绘图生成器</strong><br><br>
+              从建筑学生的视角提供经验与方案，构建真正解决痛点的平台。
+            </p>
+            <hr>
+            <p>项目类型：实习项目<br>角色：产品经理实习生<br>基础模型：Stable Diffusion</p>
+          </div>
+          <div class="image-container">
+            <a href="shanghe-zh.html">
+              <img src="shanghe/img14.png" alt="上和项目预览">
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section project-item" data-project="onair">
+        <div class="section-flex">
+          <div class="section-text">
+            <h3>onAir</h3>
+            <p><strong>重塑人与空气中颗粒物关系的 AI 可穿戴设备</strong><br><br>
+              使用 CNN 识别花粉颗粒，提醒过敏用户注意防护；通过充气气囊的轻柔触感，建立人与空气中不可见世界的互动。
+            </p>
+            <hr>
+            <p>项目类型：个人项目<br>视觉架构：CNN<br>工具：Arduino、PyTorch、Blender</p>
+          </div>
+          <div class="image-container">
+            <a href="onAir-zh.html">
+              <img src="onair/img14.png" alt="onAir 项目预览">
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script>
+    (function() {
+      var filters = document.querySelectorAll('.sidebar-filter');
+      var items = document.querySelectorAll('.project-item');
+      var map = { all: [], personal: ['manifestation','tailtell'], internship: ['shopping','shanghe'], hci: ['onair'] };
+      function showFilter(filterId) {
+        var ids = map[filterId];
+        items.forEach(function(el) {
+          var project = el.getAttribute('data-project');
+          var show = filterId === 'all' || (ids && ids.indexOf(project) !== -1);
+          el.style.display = show ? '' : 'none';
+        });
+        filters.forEach(function(a) {
+          a.classList.toggle('active', a.getAttribute('data-filter') === filterId);
+        });
+      }
+      filters.forEach(function(a) {
+        a.addEventListener('click', function(e) {
+          e.preventDefault();
+          showFilter(a.getAttribute('data-filter'));
+        });
+      });
+      showFilter('all');
+    })();
+  </script>
+</body>
+
+</html>

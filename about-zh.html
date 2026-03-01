@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于 - 蒋昕玥</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { background: #fff; color: #000; }
+    .top-nav { background: #fff; color: #000; }
+    .sidebar, .content, .container, .nav-content { background: transparent; color: #000; }
+    a, a:visited, a:active { color: #000; }
+    a:hover { color: #333; }
+    hr { border-color: #333; }
+    .content h2 { color: #000; }
+    .about-page.container { display: flex; flex-direction: column; }
+    .about-row { display: flex; align-items: flex-start; margin-bottom: 0; }
+    .about-sidebar-title { width: 260px; flex-shrink: 0; padding: 32px 16px 0 24px; font-size: 18px; font-weight: 600; color: #000; line-height: 1.4; box-sizing: border-box; }
+    .about-body { flex: 1; min-width: 0; padding: 32px 40px 36px 0; box-sizing: border-box; }
+    .about-section { margin-bottom: 36px; }
+    .about-section h3 { font-size: 18px; margin-bottom: 12px; color: #000; }
+    .about-section h4 { font-size: 15px; font-weight: 600; margin: 16px 0 6px 0; color: #000; }
+    .about-body.about-section h4:not(:first-child) { margin-top: 1.5em; }
+    .about-section .meta { font-size: 13px; color: #666; margin-bottom: 8px; }
+    .about-section ul { margin: 0 0 12px 0; padding-left: 20px; }
+    .about-section li { font-size: 14px; line-height: 1.7; margin-bottom: 6px; }
+    .about-section p { font-size: 14px; line-height: 1.7; margin-bottom: 12px; }
+  </style>
+</head>
+
+<body>
+  <nav class="top-nav">
+    <div class="nav-content">
+      <ul>
+        <li><a href="index-zh.html">项目</a></li>
+        <li><a href="about-zh.html" class="active">关于</a></li>
+        <li><a href="about.html">EN</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container about-page">
+    <div class="about-row">
+      <div class="about-sidebar-title">教育</div>
+      <div class="about-body about-section">
+        <h4>康奈尔大学</h4>
+        <p class="meta">2025年8月 – 2027年5月 · 美国伊萨卡</p>
+        <p>交互设计（辅修计算机科学）</p>
+        <h4>同济大学（985）</h4>
+        <p class="meta">2020年9月 – 2025年7月 · 中国上海</p>
+        <p>建筑学学士</p>
+      </div>
+    </div>
+
+    <div class="about-row">
+      <div class="about-sidebar-title">实习经历</div>
+      <div class="about-body about-section">
+        <h4>腾讯</h4>
+        <p class="meta">2025年1月 – 2025年2月 · 元宝策略产品实习生 · 深圳</p>
+        <ul>
+          <p>微信元宝、客户端元宝</p>
+          <li>项目背景：面向微信生态内及客户端元宝，围绕知识问答场景优化对话质量，提升DAU及次日留存。</li>
+          <li>理想态定义：基于用户case，定义知识问答理想态，从智商情商两个维度拆解回答质量，统一训练方向与评估目标。</li>
+          <li>用户意图建模：构建“提问类型、行业领域、问题深度、情感状态”相叉乘的用户意图建模方法，匹配对应对话理想态。</li>
+          <li>数据生产链路：搭建工作流Agent主导的数据分类-生产-质检链路，通过提示词调优提升交付数据质量，支撑模型SFT。</li>
+          <p>元宝派</p>
+          <li>项目背景：面向元宝派群聊场景，针对多人交互的复杂知识问答需求，提升模型的回复表现。</li>
+          <li>群聊理想态建模：基于群聊类型、群活跃度、群消息形式、群消息提问形态及知识问答分类构建细分群聊对话理想态。</li>
+          <li> 训练数据Agent搭建：基于群聊理想态，搭建seed query+多轮群聊生成的数据生产链路，并通过从准确性、内容质量等维度进行端到端评测，从联网搜索query质量、搜索相关性、思维链质量等维度进行过程性评测，提升数据可用率达95%。</li>
+        </ul>
+
+        <h4>德勤</h4>
+        <p class="meta">2025年6月 – 2025年8月 · AI 产品实习生 · 上海</p>
+        <ul>
+          <p>先见AI多智能体研报平台(C端)</p>
+          <li>项目背景：基于德勤私域数据和RAG技术，提供高可解释性、高自由度、高可视化的AI多智能体在线研报生成服务。</li>
+          <li>用户调研：对咨询师及泛专业用户进行问卷和访谈，分梯度确定痛点，进行功能设计，并根据用户比例制定收费策略。</li>
+          <li>模型测评与提示词工程：基于业务构建模型评测指标，用Python脚本测试并产出模型测评报告。优化提示词，保证长文本生成质量。搭建dify工作流并测试，撰写多个测试文档，供后端调用。</li>
+          <li>产品规划与迭代：负责数据可视化模块，调研常用库及对应渲染模块，提出技术方案。负责web search功能，编写脚本测试多个搜索API并结合业务目标比选。调研Agent交互方式，完成Agent工作台改版及数据看板原型图、产品文档编写。</li>
+          <li>项目管理：负责WAIC版本上线，规划项目排期，协调技术合作方与数据供应商，并对结果进行验收，保证质量。</li>
+        </ul>
+
+        <h4>东方卫视（上海广播电视台官方频道）</h4>
+        <p class="meta">2025年2月 – 2025年5月 · AI 产品实习生 · 上海</p>
+        <ul>
+          <p>东方购物APP与“白玉兰直播间”直播系统智能体网络(C端)</p>
+          <li>项目背景：基于现有电商、直播平台搭建Multi-agent网络，包括直播Agent(提取重要信息、生成结构化索引、自动直播切片）、搜索Agent（处理模糊或特定需求）、客服Agent。各个Agent信息共享，形成智能化的“AI+电商”生态系统。</li>
+          <li>用户调研：为了解年轻一代的AI产品使用情况，拓展市场，对大学生进行问卷调研，并根据结论调整产品定位及功能。</li>
+          <li>竞品调研：分析现有电商AI竞品，为培养用户在电商场景下的AI使用习惯，提出IP统领Agent网络，并完成IP形象设计。</li>
+          <li>产品规划与迭代：编写产品PRD文档，绘制绘图页面原型图。用Coze搭建工作流实现功能。参与需求评审和业务宣讲。</li>
+        </ul>
+
+        <h4>博拉网络股份有限公司</h4>
+        <p class="meta">2024年12月 – 2025年2月 · AI 产品实习生 · 重庆</p>
+        <ul>
+          <p>上河智绘建筑AI项目(B端)</p>
+          <li>项目背景：以Stable Diffusion为基础，结合用户需求，整合建筑领域核心功能，并通过内置工作流优化使用体验。</li>
+          <li>用户调研：对建筑师、地产从业人员和建筑学生进行问卷及访谈调研，挖掘并分析用户需求(草图细化、更换效果图天气等)。调研竞品10+，深入分析竞品的产品流程设计、模型效果及盈利模式，构建“算力+细分模型+社区”的差异化策略。</li>
+          <li>模型训练及测评：协助大模型、LoRA训练，最终产出建筑、室内、景观大模型5个, LoRA模型30+，Comfy UI 工作流若干。调用测试集测试产品功能。参与会议并及时反馈问题。优化Prompt Template，提升用户体验。</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="about-row">
+      <div class="about-sidebar-title">活动</div>
+      <div class="about-body about-section">
+        <p><strong>小红书内容运营</strong>（账号 ID：4999312903）：运营个人小红书账号，聚焦 AI 产品解读与留学申请经验，吸引 1000+ 粉丝。</p>
+      </div>
+    </div>
+
+    <div class="about-row">
+      <div class="about-sidebar-title">技能</div>
+      <div class="about-body about-section">
+        <p><strong>产品管理：</strong>路线图规划、需求优先级、敏捷/Scrum、上市策略、数据可视化、沟通</p>
+        <p><strong>编程：</strong>Python、HTML、CSS、JavaScript、Arduino</p>
+        <p><strong>数据分析：</strong>SQL、R、Hive</p>
+        <p><strong>设计与原型：</strong>Figma、Axure、Sketch、Xmind、PS、AI、ID、PR、AE、XD、Blender、Canvas、Unreal Engine、Rhino、Grasshopper、Keyshot、Sketchup、D5、Enscape、Lumion、CAD</p>
+        <p><strong>机器学习：</strong>PyTorch、TensorFlow</p>
+        <p><strong>云平台：</strong>Azure、AWS</p>
+        <p><strong>办公协作：</strong>Excel、PowerPoint、Word、Notion、Power BI、Google Workspace、Jira、Slack</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

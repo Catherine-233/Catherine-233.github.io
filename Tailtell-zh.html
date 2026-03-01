@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>项目详情 - Tailtell 狗狗行为识别APP</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="project-detail.css">
+</head>
+
+<body>
+  <nav class="top-nav">
+    <div class="nav-content">
+      <ul>
+        <li><a href="index-zh.html">项目</a></li>
+        <li><a href="about-zh.html">关于</a></li>
+        <li><a href="Tailtell.html">EN</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="project-detail">
+    <div class="hero-section">
+      <div class="hero-text">
+        <h1 class="project-title">Tailtell</h1>
+        <h2 class="project-subtitle">基于 AI 的狗狗行为翻译 APP</h2>
+      </div>
+      <div class="hero-image">
+        <img src="tailtell/img-1.png" alt="项目主图">
+      </div>
+    </div>
+
+    <div class="project-content">
+      <div class="content-wrapper">
+        <div class="project-info-grid">
+          <div class="info-group">
+            <div class="info-label">项目类型</div>
+            <div class="info-content">个人项目</div>
+          </div>
+          <div class="info-group">
+            <div class="info-label">周期</div>
+            <div class="info-content">1 周</div>
+          </div>
+          <div class="info-group">
+            <div class="info-label">项目架构</div>
+            <div class="info-content">视觉架构：CNN<br>ML 框架：PyTorch<br>大模型：Qwen-Turbo</div>
+          </div>
+          <div class="info-group">
+            <div class="info-label">角色</div>
+            <div class="info-content">全栈开发</div>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h3>概述</h3>
+          <h2>关于项目</h2>
+          <div class="content-image-grid">
+            <div class="grid-image">
+              <h3 style="text-align: left;">问题陈述</h3>
+              <p>养犬者每天与狗狗互动，但多数依赖主观解读而非真正理解。狗狗通过细微面部表情表达情绪，这些信号对人类往往难以辨认，形成了犬类表达与人类解读之间的持续沟通鸿沟。</p>
+            </div>
+            <div class="grid-image">
+              <h3 style="text-align: left;">方案陈述</h3>
+              <p>TailTell 用 AI 将犬类面部表情转化为可读的情绪信息，探索新的人犬互动形式。系统从图像中分析狗狗面部表情，用视觉模型识别情绪状态，再通过语言模型生成简短、可读的表述。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h3>目标</h3>
+          <h2>实现 DLP</h2>
+          <div class="content-image full-width">
+            <img src="tailtell/img-2.png" alt="项目示意图">
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h3>技术栈</h3>
+          <h2>视觉模型训练</h2>
+          <p>情绪识别模型基于 CNN 的计算机视觉方法构建。选择 CNN 因其轻量、快速，适合视觉模式识别，尤其适合以空间特征为主的面部表情任务。</p>
+          <div class="content-image">
+            <video src="tailtell/video1.mp4" controls style="width: 100%; height: auto; display: block;"></video>
+          </div>
+          <p>可在 <a href="https://huggingface.co/spaces/jiawen2022/TailTell" target="_blank">Hugging Face</a> 上体验模型。</p>
+        </div>
+
+        <div class="content-section">
+          <h3>演示</h3>
+          <h2>翻译流程</h2>
+          <p>项目代码已开源，见 <a href="https://github.com/Catherine-233/TailTell" target="_blank">Github</a>。</p>
+          <div class="content-image">
+            <video src="tailtell/video2.mp4" controls style="width: 100%; height: auto; display: block;"></video>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h3>商业模式</h3>
+          <h2>宠物护理生态的入口</h2>
+          <p>基于这些情绪记录，Tailtell 提供喂养与护理建议，自然连接美容、体检、日常护理等宠物服务。因此 Tailtell 不仅是好玩的 AI 演示，更被设计为进入宠物护理生态的情绪入口。</p>
+          <div class="content-image">
+            <img src="tailtell/img-3.jpg" alt="项目示意图">
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h3>设计</h3>
+          <h2>用户界面设计</h2>
+          <div class="content-image full-width">
+            <img src="tailtell/img-4.png" alt="项目示意图">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

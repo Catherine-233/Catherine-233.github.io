@@ -185,6 +185,9 @@ hr {
 .top-nav a:visited,
 .top-nav a:active {
   color: #000;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
 }
 
 .top-nav a:hover {
@@ -205,11 +208,14 @@ hr {
   margin: 0;
   padding: 0;
   display: flex;
+  align-items: center;
   gap: 32px;
 }
 
 .top-nav li {
   padding: 16px 0;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 800px) {

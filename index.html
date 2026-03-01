@@ -52,6 +52,9 @@
     .sidebar nav ul li {
       position: relative;
     }
+    .sidebar-filter.active {
+      font-weight: 600;
+    }
     .sidebar-link-disabled {
       color: #000;
       text-decoration: underline;
@@ -87,6 +90,7 @@
       <ul>
         <li><a href="#projects" class="active">Projects</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="index-zh.html">中文</a></li>
       </ul>
     </div>
   </nav>
@@ -95,9 +99,10 @@
       <h2>Xinyue Jiang</h2>
       <nav>
         <ul>
-          <li><a href="#page1">AI/ML</a></li>
-          <li><span class="sidebar-link-disabled" data-tooltip="Coming soon" title="Coming soon">Interaction Design</span></li>
-          
+          <li><a href="#" class="sidebar-filter active" data-filter="all">All Projects</a></li>
+          <li><a href="#" class="sidebar-filter" data-filter="personal">Personal APP Development</a></li>
+          <li><a href="#" class="sidebar-filter" data-filter="internship">Internship Projects</a></li>
+          <li><a href="#" class="sidebar-filter" data-filter="hci">HCI Projects</a></li>
         </ul>
       </nav>
       <div class="contact">
@@ -107,7 +112,7 @@
     </aside>
 
     <main class="content">
-      <section id="page1" class="page-section">
+      <section class="page-section project-item" data-project="manifestation">
         <div class="section-flex">
           <div class="section-text">
             <h3>Xinguang</h3>
@@ -127,7 +132,7 @@
         </div>
       </section>
 
-      <section id="page1" class="page-section">
+      <section class="page-section project-item" data-project="tailtell">
         <div class="section-flex">
           <div class="section-text">
             <h3>Tailtell</h3>
@@ -148,7 +153,7 @@
         </div>
       </section>
 
-      <section id="page1" class="page-section">
+      <section class="page-section project-item" data-project="shopping">
         <div class="section-flex">
           <div class="section-text">
             <h3>Shanghai OCJ Shopping
@@ -169,7 +174,7 @@
         </div>
       </section>
 
-      <section id="page1" class="page-section">
+      <section class="page-section project-item" data-project="shanghe">
         <div class="section-flex">
           <div class="section-text">
             <h3>Shanghe Architectural Design Platform</h3>
@@ -191,7 +196,7 @@
       </section>
 
 
-      <section id="page1" class="page-section">
+      <section class="page-section project-item" data-project="onair">
         <div class="section-flex">
           <div class="section-text">
             <h3>onAir</h3>
@@ -217,6 +222,31 @@
 
 
   </div>
+  <script>
+    (function() {
+      var filters = document.querySelectorAll('.sidebar-filter');
+      var items = document.querySelectorAll('.project-item');
+      var map = { all: [], personal: ['manifestation','tailtell'], internship: ['shopping','shanghe'], hci: ['onair'] };
+      function showFilter(filterId) {
+        var ids = map[filterId];
+        items.forEach(function(el) {
+          var project = el.getAttribute('data-project');
+          var show = filterId === 'all' || (ids && ids.indexOf(project) !== -1);
+          el.style.display = show ? '' : 'none';
+        });
+        filters.forEach(function(a) {
+          a.classList.toggle('active', a.getAttribute('data-filter') === filterId);
+        });
+      }
+      filters.forEach(function(a) {
+        a.addEventListener('click', function(e) {
+          e.preventDefault();
+          showFilter(a.getAttribute('data-filter'));
+        });
+      });
+      showFilter('all');
+    })();
+  </script>
 </body>
 
 </html>
